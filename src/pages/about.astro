@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import Navbar from '../components/Navbar.astro';
+import About_contain from '../components/About_cointain.astro';
+
+// Import CSS Framework
+import 'bulma/css/bulma.min.css';
+
+// Variables
+let title = 'About Page';
+let description =
+	'About page for MOTD Generator for Vanilla / Spigot Minecraft servers';
+---
+
+<Base title={title} description={description}>
+	<Navbar />
+	<About_contain />
+</Base>
