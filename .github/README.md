@@ -4,7 +4,7 @@
 
 Original [Project](https://github.com/notKimu/Simple-MOTD) by [**Kimu**](https://github.com/notKimu)
 
-![a](.vscorde/../.vscode/app.png)
+![a](app.png)
 
 ## Packages:
 
@@ -12,6 +12,15 @@ Original [Project](https://github.com/notKimu/Simple-MOTD) by [**Kimu**](https:/
 -   BulmaCSS
 
 > Trying a project using bun and BulmaCSS
+
+### To install
+```sh
+bun install
+```
+### To execute
+```sh
+bun run dev
+```
 
 ---
 

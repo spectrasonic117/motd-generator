@@ -2,13 +2,13 @@
 
 ---
 
-<section class='columns is-centered flex centered'>
+<section class='columns is-centered is-flex centered'>
 	<div class='column is-7'>
 		<!-- <h1 class='title is-3 has-text-primary'>MOTD Generator</h1> -->
-		<div class='motd-options'>
+		<div class='motd-options is-flex is-flex-direction-column'>
 			<!-- Colors -->
-			<section class='options-container box is-half'>
-				<ul class='flex centered'>
+			<section class='options-container box is-half mt-4'>
+				<ul class='centered is-flex is-justify-content-center is-align-content-center is-flex-wrap-wrap'>
 					<a onclick="insertItem('&0');"
 						><li class='color black'></li></a
 					>
@@ -63,7 +63,7 @@
 			<!-- TEXT Types-->
 
 			<section class='box'>
-				<ul class='options-container flex centered'>
+				<ul class='options-container is-flex is-justify-content-center is-align-content-center is-flex-wrap-wrap'>
 					<a onclick="insertItem('&l');"
 						><li class='option'><b>Bold</b></li></a
 					>
@@ -95,7 +95,7 @@
 					<textarea
 						spellcheck='false'
 						cols='45'
-						rows='1'
+						rows='2'
 						id='textarea'
 						class='textarea column'
 						placeholder='YOUR MOTD'></textarea>
@@ -103,7 +103,7 @@
 
 				<!-- Preview section -->
 
-				<div class='hidden'>
+				<div class='is-hidden'>
 					<div class='control is-expanded'>
 						<input
 							id='preview'
@@ -190,28 +190,6 @@
 </section>
 
 <style>
-	.hidden {
-		display: none;
-	}
-	.flex {
-		display: flex;
-		margin: 0px;
-		flex-wrap: wrap;
-	}
-
-	.centered {
-		align-items: center;
-		justify-content: center;
-	}
-
-	.motd-options {
-		display: flex;
-		flex-direction: column;
-	}
-	.options-container {
-		overflow: hidden;
-		align-items: center;
-	}
 
 	li.option {
 		margin: 10px;
